@@ -33,12 +33,12 @@ completed = False
 while (completed is False):
 
     display_with_spaces(discovered)
-    guessed = input('Guess a letter in the word: ')
+    guessed = input('Guess a character in the word: ')
     if guessed in word:
         print('Correct guess!')
-        discovered = replace_with_discovered(word,discovered,  guessed)
+        discovered = replace_with_discovered(word, discovered, guessed)
         # the counter is not increaed by 1 !
-        # the counter is increased by string.count(character) because the word might contain the character multiple times
+        # the counter is increased by string.count(character) because the word might have the character more than once!
         discovered_characters += word.count(guessed)
         if discovered_characters == len(word):
             print('The word is ' + word)
