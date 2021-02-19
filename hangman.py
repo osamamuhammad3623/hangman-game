@@ -22,7 +22,7 @@ def count_word_size(word):
         discovered += '_'
     return discovered
 
-list_of_words = ['osama', 'sports', 'science', 'integration', 'vision'] # you can add words as many as you want!
+list_of_words = ['osama', 'sports', 'science', 'integration', 'vision', 'backend'] # you can add words as many as you want!
 word = random.choice(list_of_words)
 discovered = count_word_size(word)
 
